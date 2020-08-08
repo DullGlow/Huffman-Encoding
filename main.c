@@ -170,10 +170,6 @@ void encode(FILE *input, Node *head, FILE *output) {
 		}
 		c = getc(input);
 	}
-	int result[258];
-	for (int i = 0; i < 258; i++) {
-		result[i] = 0;
-	}
 	// Add EOF as well
 	int result[258];
 	if (!getSequence(PSEUDO_EOF, head, result, 0))
